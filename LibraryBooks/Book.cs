@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace LibraryBooks
 {
@@ -7,6 +8,8 @@ namespace LibraryBooks
         public string bookName { get; }
         public DateTime publicationYear { get; }
         public string Author { get; }
+
+        List<Book> bookList = new List<Book>();
 
         public Book(string name, DateTime date, string author)
         {
