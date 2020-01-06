@@ -10,6 +10,8 @@ namespace LibraryBooks
         public DateTime publicationYear { get; }
         public string Author { get; }
 
+        List<Book> bookList = new List<Book>();
+
         public Book(string name, DateTime date, string author)
         {
             #region Chec
