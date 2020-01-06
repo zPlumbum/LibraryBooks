@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace LibraryBooks
 {
-    class Book
+    [Serializable]
+    public class Book
     {
         public string bookName { get; }
         public DateTime publicationYear { get; }
@@ -33,7 +35,7 @@ namespace LibraryBooks
 
         public override string ToString()
         {
-            return bookName;
+            return $"Название книги: {bookName} \nДата публикации: {publicationYear} \nАвтор: {Author}";
         }
     }
 }
